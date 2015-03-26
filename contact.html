@@ -41,13 +41,20 @@
         <!-- Contact Form -->
         <form action="#" method="post">
           <label for="fullname">Name</label>
-          <input type="text" id="fullname" name="fullname" placeholder="your name" required>
+          <span id="fullname-error" class="error">must be more than 2 characters.</span>
+          <input type="text" id="fullname" name="fullname" placeholder="your name">
+
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="your email" required>
+          <span id="email-error" class="error">must be a valid email.</span>
+          <input type="text" id="email" name="email" placeholder="your email">
+
           <label for="phone">Phone</label>
           <input type="tel" id="phone" name="phone" placeholder="your phone (optional)">
+
           <label for="message">Message</label>
+          <span id="message-error" class="error">cannot be left blank.</span>
           <textarea id="message" name="message" rows="10"></textarea>
+
           <input type="submit" value="send">
         </form>
       </section>

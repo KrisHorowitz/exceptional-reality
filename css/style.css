@@ -57,6 +57,7 @@ th, td {
 th {
   background: #555;
   color: white;
+  cursor: pointer;
 }
 
 input, textarea {
